@@ -2,8 +2,20 @@
 
 void lovecall();
 
+char *getname(){
+ 	static char name[ 128];
+
+	printf("Input name :");
+	scanf("%s", name);
+	return name;
+}
+
 int main(){
-	printf("I like you\n");
-	lovecall();
+	char *str;
+
+	str = getname();
+	printf("I like you.\n");
+	printf("%s\n",str);
+	// love call();
 	return 0;
 }
