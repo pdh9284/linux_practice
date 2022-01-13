@@ -4,5 +4,5 @@ void func1(){
 }
 
 void func2(){
-	printf("beautiful\n");
+	printf("Beautiful \n");
 }
