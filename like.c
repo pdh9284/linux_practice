@@ -1,21 +1,8 @@
-#include<stdio.h>
-
-void lovecall();
-
-char *getname(){
- 	static char name[ 128];
-
-	printf("Input name :");
-	scanf("%s", name);
-	return name;
-}
+#include "mylib.h"
 
 int main(){
-	char *str;
-
-	str = getname();
-	printf("I like you.\n");
-	printf("%s\n",str);
-	// love call();
+	func1();
+	func2();
+	func3();
 	return 0;
 }
