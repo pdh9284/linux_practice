@@ -22,6 +22,9 @@ $(LIB_SRC1).o: $(LIB_SRC1).c
 $(LIB_SRC2).o: $(LIB_SRC2).c
 	$(CC) $(CFLAGS) -c -o $(LIB_SRC2).o $(LIB_SRC2).c
 
+clean :
+	rm -rf *.o $(TARGET)
+
 
 #test: like.o  file1.o file2.o
 #	gcc -W -Wall -o test like.o file1.o file2.o
