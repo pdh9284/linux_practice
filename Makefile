@@ -9,9 +9,8 @@ LIB_SRC2 = file2
 LIB_OUT = libmy.a
 
 all : $(TARGET)
-
 $(TARGET): like.c $(LIB_OUT)
-	$(CC) $(CFLAGS) -o $(TARGET) like.o -L./ -lmy
+	$(CC) $(CFLAGS) -o $(TARGET) like.c $(LIB_OUT)
 
 $(LIB_OUT): $(LIB_SRC1).o $(LIB_SRC2).o
 	$(AR) rscv $(LIB_OUT) $(LIB_SRC1).o $(LIB_SRC2).o
